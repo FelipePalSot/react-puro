@@ -6,6 +6,7 @@ import { ItemCounter } from "./shopping-cart/ItemCounter";
     const mockItemCounter = vi.fn((props: unknown)=>{
         return <div data-testid="ItemCounter"/>;
     })
+    //mocker es importante para pruebas unitarias
 
     vi.mock('./shopping-cart/ItemCounter',()=>({
         ItemCounter: (props: unknown) => mockItemCounter(props),

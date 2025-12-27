@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, test, vi } from "vitest";
 import { render, screen } from '@testing-library/react';
 import { FirstStepsApp } from './FirstStepsApp';
-import { ItemCounter } from "./shopping-cart/ItemCounter";
+
 
     const mockItemCounter = vi.fn((props: unknown)=>{
         return <div data-testid="ItemCounter"/>;
